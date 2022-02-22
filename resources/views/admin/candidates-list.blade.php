@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Aspirantes')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Listado de aspirantes</h1>
 @stop
 
 @section('content')
-    <p class="bg-primary">Welcome to this beautiful admin panel.</p>
+    @livewire('candidate-list')
 @stop
 
 @section('css')

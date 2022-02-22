@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => '',
     'title_prefix' => '',
-    'title_postfix' => '',
+    'title_postfix' => ' | Cetmar 31',
 
     /*
     |--------------------------------------------------------------------------
@@ -237,21 +237,22 @@ return [
         ],
 
         // Sidebar items:
+        /*
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
+        */
         [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
+            'text'        => 'Dashboard',
             'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'icon'        => 'fas fa-fw fa-home',
+        
         ],
         ['header' => 'account_settings'],
         [
@@ -265,20 +266,33 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Usuarios',
+            'icon'    => 'fas fa-fw fa-user',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text'      => 'Crear nuevo usuario',
+                    'route'     => 'user.create',
+                    'icon'      => 'fas fa-fw fa-user-plus'
                 ],
                 [
-                    'text'    => 'level_one',
+                    'text'      => 'Editar usuario',
+                    'route'     => 'user.create',
+                    'icon'      => 'fas fa-fw fa-user-edit'
+                ],
+                [
+                    'text'    => 'Aspirantes',
                     'url'     => '#',
+                    'icon'      => 'fas fa-fw fa-user-tie',
                     'submenu' => [
                         [
-                            'text' => 'level_two',
-                            'url'  => '#',
+                            'text'      => 'Crear nuevo aspirante',
+                            'route'     => 'user.create',
+                            'icon'      => 'fas fa-fw fa-user-plus'
+                        ],
+                        [
+                            'text'      => 'Ver listado de aspirantes',
+                            'route'     => 'candidates.list',
+                            'icon'      => 'fas fa-fw fa-users'
                         ],
                         [
                             'text'    => 'level_two',
