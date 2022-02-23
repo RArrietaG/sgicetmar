@@ -3,11 +3,11 @@
 @section('title', 'Aspirantes')
 
 @section('content_header')
-    <h1>Listado de aspirantes</h1>
+    <h2>Listado de aspirantes</h2>
 @stop
 
 @section('content')
-    @livewire('candidate-list')
+    @livewire('admin.candidates-list')
 @stop
 
 @section('css')

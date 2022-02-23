@@ -249,10 +249,9 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Dashboard',
-            'url'         => 'admin/pages',
-            'icon'        => 'fas fa-fw fa-home',
-        
+            'text'        => 'Panel de administración',
+            'url'       => 'dashboard',
+            'icon'        => 'fas fa-fw fa-tachometer-alt',
         ],
         ['header' => 'account_settings'],
         [
@@ -266,19 +265,9 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'Usuarios',
-            'icon'    => 'fas fa-fw fa-user',
+            'text'    => 'Entidades del sistema',
+            'icon'    => 'fas fa-fw fa-bars',
             'submenu' => [
-                [
-                    'text'      => 'Crear nuevo usuario',
-                    'route'     => 'user.create',
-                    'icon'      => 'fas fa-fw fa-user-plus'
-                ],
-                [
-                    'text'      => 'Editar usuario',
-                    'route'     => 'user.create',
-                    'icon'      => 'fas fa-fw fa-user-edit'
-                ],
                 [
                     'text'    => 'Aspirantes',
                     'url'     => '#',

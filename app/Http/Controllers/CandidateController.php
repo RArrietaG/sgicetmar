@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 class CandidateController extends Controller
 {
     public function index() {
-        $candidates = Candidate::all();
-        return view('admin.candidates-list', compact('candidates'));
+        return view('admin.candidates-list');
     }
 }
