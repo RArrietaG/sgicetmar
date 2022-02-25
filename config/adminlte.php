@@ -275,12 +275,11 @@ return [
                     'submenu' => [
                         [
                             'text'      => 'Crear nuevo aspirante',
-                            'route'     => 'user.create',
                             'icon'      => 'fas fa-fw fa-user-plus'
                         ],
                         [
                             'text'      => 'Ver listado de aspirantes',
-                            'route'     => 'candidates.list',
+                            'route'     => 'candidates',
                             'icon'      => 'fas fa-fw fa-users'
                         ],
                         [

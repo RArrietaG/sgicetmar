@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\CandidateController;
-use App\Http\Livewire\CandidateList;
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,12 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('candidates/list', [CandidateController::class,'index'])->name('candidates.list');
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('user.create');
+Route::view('/candidates','admin.candidates')->middleware('auth')->name('candidates');
